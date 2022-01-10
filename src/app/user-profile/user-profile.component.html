@@ -1,0 +1,21 @@
+
+  <dl  [style]="'color: red'">
+    <input (keyup.space)="oneSpaceKeyup($event)">
+
+
+    <img [src]="avatarUrl" (click)="handleAvatarClick($event)">
+
+
+
+    <dt>Name:</dt>
+    <dd>{{ name }}</dd>
+
+    <dt>LastName:</dt>
+    <dd>{{ lastname }}</dd>
+
+    <dt [zoom]="40">Age:</dt>
+    <dd>{{ age }}</dd>
+  </dl>
+
+
+
