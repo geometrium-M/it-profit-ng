@@ -7,7 +7,17 @@
 
 <p>{{text | uppercase | lowercase | titlecase | slice: 0:7 }}</p>
 
+<p>{{ text | truncate: 10: 'example'  }}</p>
+
 <p>{{ now | date: 'HH:mm:ss' }}</p>
+
+<br> <br>
+
+<input name="max-length" [(ngModel)]="maxLength">
+  <p> {{maxLength}} </p>
+  <p>{{ text | truncate:maxLength: '...' }}</p>
+
+
 
 
 

@@ -15,6 +15,8 @@ export class PipesExampleComponent implements OnInit {
   text: string = "course of itprofit";
   now: Date= new Date();
 
+  maxLength: number;
+
   user: User;
 
   constructor() {
