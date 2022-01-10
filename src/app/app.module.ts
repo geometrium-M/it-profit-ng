@@ -7,6 +7,7 @@ import {FormsModule} from "@angular/forms";
 import { UserVisibleDirective } from './user-profile/user-visible.directive';
 import { ZoomDirective } from "./user-profile/zoom.directive";
 import { Zoom2Directive } from './zoom2-directive';
+import { UsersExampleComponent } from './comp/users-example/users-example.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { Zoom2Directive } from './zoom2-directive';
     UserVisibleDirective,
     ZoomDirective,
     Zoom2Directive,
+    UsersExampleComponent,
 
   ],
   imports: [
