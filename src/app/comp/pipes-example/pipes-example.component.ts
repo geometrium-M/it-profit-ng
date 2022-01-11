@@ -18,13 +18,28 @@ export class PipesExampleComponent implements OnInit {
   maxLength: number;
 
   user: User;
+  users : User[]
 
   constructor() {
    this.user = [...mockUsers].pop() as User;
+   this.users = mockUsers;
 
   }
 
   ngOnInit(): void {
+  }
+
+  onAddUser() {
+    let newUser: User = {
+      name: "Bob",
+      age: 22,
+      id: 234,
+      avatarUrl: "",
+      email: "",
+      lastname: "",
+    };
+    this.users.push(newUser)
+
   }
 
 }

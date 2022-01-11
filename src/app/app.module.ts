@@ -10,6 +10,7 @@ import { Zoom2Directive } from './zoom2-directive';
 import { UsersExampleComponent } from './comp/users-example/users-example.component';
 import { PipesExampleComponent } from './comp/pipes-example/pipes-example.component';
 import { TruncatePipe } from './comp/pipes-example/truncate.pipe';
+import { UsersPipe } from './comp/pipes-example/users.pipe';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { TruncatePipe } from './comp/pipes-example/truncate.pipe';
     UsersExampleComponent,
     PipesExampleComponent,
     TruncatePipe,
+    UsersPipe,
 
   ],
   imports: [

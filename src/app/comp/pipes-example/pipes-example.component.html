@@ -15,7 +15,11 @@
 
 <input name="max-length" [(ngModel)]="maxLength">
   <p> {{maxLength}} </p>
-  <p>{{ text | truncate:maxLength: '...' }}</p>
+  <p>{{ text | truncate:maxLength: '...'   }}</p>
+
+<button (click)="onAddUser()"> Add user</button>
+
+<p *ngFor=" let user of users | usersNameStartsWith: 'B' "> {{user.name }} </p>
 
 
 
