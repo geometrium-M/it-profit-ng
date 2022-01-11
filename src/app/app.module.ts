@@ -11,6 +11,7 @@ import { UsersExampleComponent } from './comp/users-example/users-example.compon
 import { PipesExampleComponent } from './comp/pipes-example/pipes-example.component';
 import { TruncatePipe } from './comp/pipes-example/truncate.pipe';
 import { UsersPipe } from './comp/pipes-example/users.pipe';
+import {UserRangePipe} from "./user-profile/user-range.pipe";
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { UsersPipe } from './comp/pipes-example/users.pipe';
     PipesExampleComponent,
     TruncatePipe,
     UsersPipe,
+    UserRangePipe,
 
   ],
   imports: [

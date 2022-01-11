@@ -4,6 +4,8 @@
 <button (click)="isVisible = !isVisible" [innerText]="isVisible ? 'Скрыть' : 'Показать'"></button>
 
 
+<<!--<p>{{ getUserRange(100,200) }}</p> -->>
+<p> {{100 | userRange:250 }}</p>
 
 <app-user-profile
   *ngIf="isVisible; else noUserMessageTemplate"

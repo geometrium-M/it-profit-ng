@@ -21,5 +21,7 @@ export class UsersExampleComponent  {
   public handleProfileClick(event: MouseEvent) {
     console.log(event);
   }
-
+  public getUserRange (minYear: number, maxYear: number): number {
+    return maxYear-minYear;
+  }
 }
