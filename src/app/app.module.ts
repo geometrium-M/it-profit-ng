@@ -12,6 +12,8 @@ import { PipesExampleComponent } from './comp/pipes-example/pipes-example.compon
 import { TruncatePipe } from './comp/pipes-example/truncate.pipe';
 import { UsersPipe } from './comp/pipes-example/users.pipe';
 import {UserRangePipe} from "./user-profile/user-range.pipe";
+import { ViewrefExampleComponent } from './comp/template-variables-example/viewref-example/viewref-example.component';
+import { ViewrefChildComponent } from './comp/template-variables-example/viewref-child/viewref-child.component';
 
 
 @NgModule({
@@ -26,6 +28,8 @@ import {UserRangePipe} from "./user-profile/user-range.pipe";
     TruncatePipe,
     UsersPipe,
     UserRangePipe,
+    ViewrefExampleComponent,
+    ViewrefChildComponent,
 
   ],
   imports: [
