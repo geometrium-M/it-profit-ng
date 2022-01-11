@@ -1,0 +1,49 @@
+
+<!-- <p [Zoom2]="40"> this is model zoom</p> -->
+
+<button (click)="isVisible = !isVisible" [innerText]="isVisible ? 'Скрыть' : 'Показать'"></button>
+
+
+
+<app-user-profile
+  *ngIf="isVisible; else noUserMessageTemplate"
+  [(name)]="userName"
+  [(lastname)]="userLastName"
+  [(age)]="userAge"
+  [avatarUrl]="userAvatarUrl"
+  (profileClick)="handleProfileClick($event)"
+></app-user-profile>
+
+<ng-template #noUserMessageTemplate>
+  <h2>
+    <i> Hidden Info</i>
+  </h2>
+
+</ng-template>
+
+
+<button (click)="userAge=10; userName='Adam'">CLICK</button>
+
+<!--<ng-template appUserVisible [appUserVisible]="isVisible">
+  {{ userName }} {{ userLastName }} {{ userAge }}
+</ng-template> -->
+
+<p *appUserVisible="isVisible">
+  {{ userName }} {{ userLastName }} {{ userAge }}
+</p>
+
+<hr>
+
+<ng-container *ngIf="isVisible">
+  <app-user-profile
+    *ngFor="let user of users; let idx = index; let first=first; let last=last"
+    [id]="user.id"
+    [name]="user.name"
+    [lastname]="user.lastname"
+    [age]="user.age"
+    [avatarUrl]="user.avatarUrl"
+    [class.user-profile--first]="first"
+    [class.user-profile--last]="last"
+    [ngStyle]="{ backgroundColor: first ? 'red' : last ? 'blue' : ''}"
+  ></app-user-profile>
+</ng-container>

@@ -7,6 +7,10 @@ import {FormsModule} from "@angular/forms";
 import { UserVisibleDirective } from './user-profile/user-visible.directive';
 import { ZoomDirective } from "./user-profile/zoom.directive";
 import { Zoom2Directive } from './zoom2-directive';
+import { UsersExampleComponent } from './comp/users-example/users-example.component';
+import { PipesExampleComponent } from './comp/pipes-example/pipes-example.component';
+import { TruncatePipe } from './comp/pipes-example/truncate.pipe';
+import { UsersPipe } from './comp/pipes-example/users.pipe';
 
 
 @NgModule({
@@ -16,6 +20,10 @@ import { Zoom2Directive } from './zoom2-directive';
     UserVisibleDirective,
     ZoomDirective,
     Zoom2Directive,
+    UsersExampleComponent,
+    PipesExampleComponent,
+    TruncatePipe,
+    UsersPipe,
 
   ],
   imports: [

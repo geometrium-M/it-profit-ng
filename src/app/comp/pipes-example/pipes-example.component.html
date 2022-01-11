@@ -1,0 +1,31 @@
+
+
+
+<p> {{pi  | number: '1.0-2' }}</p>
+
+<p>{{amount | percent }}</p>
+
+<p>{{text | uppercase | lowercase | titlecase | slice: 0:7 }}</p>
+
+<p>{{ text | truncate: 10: 'example'  }}</p>
+
+<p>{{ now | date: 'HH:mm:ss' }}</p>
+
+<br> <br>
+
+<input name="max-length" [(ngModel)]="maxLength">
+  <p> {{maxLength}} </p>
+  <p>{{ text | truncate:maxLength: '...'   }}</p>
+
+<button (click)="onAddUser()"> Add user</button>
+
+<p *ngFor=" let user of users | usersNameStartsWith: 'B' "> {{user.name }} </p>
+
+
+
+
+
+<ng-container *ngIf="{visible: true} as state">
+  <button type="button" (click)="state.visible=!state.visible">Debug show/hide</button>
+  <pre *ngIf="state.visible">{{ user | json }}</pre>
+</ng-container>
