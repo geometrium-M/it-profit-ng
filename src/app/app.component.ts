@@ -1,5 +1,5 @@
 import {AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
-import {ViewrefExampleComponent} from "./comp/template-variables-example/viewref-example/viewref-example.component";
+import {ViewrefExampleComponent} from "./examples/comp/template-variables-example/viewref-example/viewref-example.component";
 
 @Component({
   selector: 'app-root',
